@@ -1,0 +1,85 @@
+.header{
+    width: 100%;
+    position: relative;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 0;
+}
+nav{
+    width: 30%;
+}
+ nav ul{
+     width: 100%;
+}
+nav ul  li{
+    width: 100%;
+    background:#123751;
+    margin: 5px 0;
+    height:40px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0;
+}
+nav ul li  a{
+    color: #ffffff;
+    font-size: 16px;
+}
+.register-informationlist{
+    display: block;
+    width: 60%;
+}
+form{
+    width: 100%;
+}
+form ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form ul li {
+    margin-right: 10px;
+}
+form ul li label{
+font-size: 16px;
+color:#c1c1c1;
+margin:20px 0 0 0;
+font-weight: 500;
+
+}
+form ul li select,
+form ul li input{
+width: 260px;
+outline: none;
+}
+form ul li select{
+    height: 29px;
+}
+form ul li button{
+    margin-top: 40px;
+    height: 28px;
+    width: 46px;
+    background: transparent;
+    border: 0;
+}
+table{
+    border: 1px solid #d3d3d3;
+    width: 100%;
+    margin: 10px 0;
+    background: #f6f6f6;
+}
+table tr:nth-of-type(1){
+    background:#123751!important;
+    color: #ffffff;
+}
+table tr td{
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    width: 25%;
+}
+table tr td:nth-of-type(4){
+    width: 15%;
+}
