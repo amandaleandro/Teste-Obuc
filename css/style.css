@@ -147,6 +147,10 @@ table tr select:disabled  {
     h2{
         top: -158px;
     }
+        
+    form ul li select, form ul li input {
+    width: 286px;
+}
 }
    
    
