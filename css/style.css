@@ -144,6 +144,9 @@ table tr select:disabled  {
     .trapezium {
         border-top: 255px solid #123751;
     }
+    h2{
+        top: -158px;
+    }
 }
    
    
