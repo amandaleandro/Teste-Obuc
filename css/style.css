@@ -140,3 +140,10 @@ table tr select:disabled  {
     opacity: 1 !important;
     background: none;
 }
+@media(min-width:90em){
+    .trapezium {
+        border-top: 255px solid #123751;
+    }
+}
+   
+   
