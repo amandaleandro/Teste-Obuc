@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.0/css/pro.min.css">
     <link rel="stylesheet" href="./css/reseet.css">
     <link rel="stylesheet" href="./css/style.css">
     <title></title>
 </head>
+
 <body>
     <div class="content_page">
         <header>
+            <div class="trapezium"></div>
             <img src="./imgs/admin-small.png" width="100%" alt="">
             <h2>Administração</h2>
         </header>
@@ -22,59 +27,55 @@
             <div class="container-fluid">
                 <nav>
                     <ul>
-                        <li><a href="">Acessos  Administrativo</a></li>
+                        <li><a href="">Acessos Administrativo</a></li>
                         <li><a href="">Serviços</a></li>
                         <li><a href="">Fale Conosco</a></li>
                         <li><a href="">Report</a></li>
-                        <li><a href="">Pesquisa de  Sastifação</a></li>
+                        <li><a href="">Pesquisa de Sastifação</a></li>
                         <li><a href="">Prédios</a></li>
                         <li><a href="">Locais de trabalho</a></li>
                     </ul>
                 </nav>
-                <div class="register-informationlist">
+                <form class="register-informationlist">
                     <h3>Locais de Trabalho</h3>
-                    <form id="register">
+                    <div id="register">
                         <ul>
                             <li>
-                                <label for="txtfunc">Funcionario</label>
-                                <input type="text" id="txtfunc"autocomplete="off"/>
+                                <label for="txtfunc">Funcionário</label>
+                                <input type="text" id="txtfunc" autocomplete="off" />
                             </li>
                             <li>
                                 <label for="txtpredio">Prédio</label>
                                 <select name="predio" id="txtpredio">
                                     <option value="    "></option>
-                                    <option value="Prédio 1">Prédio 1</option>
-                                    <option value="Prédio 2">Prédio 2</option>
-                                    <option value="Prédio 3">Prédio 3</option>
-                                  </select>
+                                    <option value="Predio 1">Predio 1</option>
+                                    <option value="Predio 2">Predio 2</option>
+                                    <option value="Predio 3">Predio 3</option>
+                                </select>
                             </li>
                             <li>
                                 <label for="txtlocal">Local de trabalho</label>
-                                <input type="text" id="txtlocal" autocomplete="off"/>
+                                <input type="text" id="txtlocal" autocomplete="off" />
                             </li>
                             <li>
-                                <button type="submit" id="btnSalvar"<i class="fal fa-plus"></i>
-                              </button>
+                                <button type="button" onclick="insertFuncionario()" id="btnSalvar" <i
+                                    class="fal fa-plus"></i></button>
                             </li>
                         </ul>
-                    </form>
+                    </div>
                     <table id="tblListar">
-                            <tr>
-                                <td>Funcionário</td>
-                                <td>Prédio</td>
-                                <td>Local de Trabalho</td>
-                                <td style="color:transparent">         </td>
-                            </tr>
-                            <tr>
-                                <td>teste</td>
-                                <td>teste</td>
-                                <td>teste</td>
-                                <td></td>
-                            </tr>
+                        <tr>
+                            <th>Funcionário</th>
+                            <th>Prédio</th>
+                            <th>Local de Trabalho</th>
+                            <th></th>
+                        </tr>
                     </table>
-                </div>
             </div>
         </div>
     </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
